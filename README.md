@@ -1,3 +1,3 @@
 # L-System
 
-<img src="smaples/bush.png" alt="niveau"/>
+<img src="samples/bush.png" alt="bush"/>
