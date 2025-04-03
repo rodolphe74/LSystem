@@ -1,6 +1,7 @@
 # L-System
 
 ```C++
+// Bush creation
 LSystem lsys;
 lsys.setAxiom("Y");
 lsys.addRule('X', "X[-FFF][+FFF]FX");
@@ -11,8 +12,9 @@ lsys.setLength(4.0f);
 lsys.setAngle((float)DEGTORAD(25.7));
 ```
 
-Using wxWidgets:
+
 ```C++
+// Displaying using wxWidgets
 void MyFrame::OnPaint(wxPaintEvent &event) {
   wxPaintDC dc(this);
   wxGraphicsContext *gc = wxGraphicsContext::Create(dc);
