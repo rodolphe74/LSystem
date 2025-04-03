@@ -1,3 +1,3 @@
 # L-System
 
-<img src="samples/bush.png" alt="bush"/>
+<img src="samples/Bush.png" alt="bush"/>
