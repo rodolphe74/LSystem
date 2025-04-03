@@ -11,4 +11,20 @@ lsys.setLength(4.0f);
 lsys.setAngle((float)DEGTORAD(25.7));
 ```
 
+Using wxWidgets:
+```C++
+void MyFrame::OnPaint(wxPaintEvent &event) {
+  wxPaintDC dc(this);
+  wxGraphicsContext *gc = wxGraphicsContext::Create(dc);
+  
+  if (gc)
+  {
+    gc->SetAntialiasMode(wxANTIALIAS_DEFAULT);
+    gc->SetPen(wxPen(wxColor(0, 0, 0), 1));
+    lsys.wxDraw(gc, 350, 550, (float)M_PI / 2.0f);
+    delete gc;
+  }
+}
+```
+
 <img src="samples/Bush.png" width="200"  alt="bush"/>
