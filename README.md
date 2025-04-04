@@ -2,7 +2,18 @@
 
 <table>
 <tr>
-    <td>Key 1</td>
+    <td>
+```C++
+// Bush creation
+LSystem lsys;
+lsys.setAxiom("Y");
+lsys.addRule('X', "X[-FFF][+FFF]FX");
+lsys.addRule('Y', "YFX[+Y][-Y]");
+lsys.recurse(6);
+lsys.dumpRecursion();
+lsys.setLength(4.0f);
+lsys.setAngle((float)DEGTORAD(25.7));
+```</td>
     <td>Value 1</td>
 </tr>
 <tr>
