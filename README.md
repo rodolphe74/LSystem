@@ -30,3 +30,5 @@ void MyFrame::OnPaint(wxPaintEvent &event) {
 ```
 
 <img src="samples/Bush.png" width="200"  alt="bush"/>
+
+# Other examples
