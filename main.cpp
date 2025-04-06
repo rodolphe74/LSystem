@@ -47,13 +47,21 @@ MyFrame::MyFrame(const wxString &title, const wxPoint &pos, const wxSize &size)
 	//lsys.setLength(6);
 	//lsys.setAngle((float)DEGTORAD(120));
 
-	lsys.setAxiom("Y");
-	lsys.addRule('X', "X[-FFF][+FFF]FX");
+	//lsys.setAxiom("Y");
+	//lsys.addRule('X', "X[-FFF][+FFF]FX");
+	//lsys.addRule('Y', "YFX[+Y][-Y]");
+	//lsys.recurse(6);
+	//lsys.dumpRecursion();
+	//lsys.setLength(4.0f);
+	//lsys.setAngle((float)DEGTORAD(25.7));
+
+	lsys.setAxiom("F++F++F");
+	lsys.addRule('F', "F-F++F-F");
 	lsys.addRule('Y', "YFX[+Y][-Y]");
-	lsys.recurse(6);
+	lsys.recurse(5);
 	lsys.dumpRecursion();
-	lsys.setLength(4.0f);
-	lsys.setAngle((float)DEGTORAD(25.7));
+	lsys.setLength(2.0f);
+	lsys.setAngle((float)DEGTORAD(60));
 
 }
 
@@ -69,7 +77,8 @@ void MyFrame::OnPaint(wxPaintEvent &event) {
 		gc->SetAntialiasMode(wxANTIALIAS_DEFAULT);
 		gc->SetPen(wxPen(wxColor(0, 0, 0), 1));
 		//lsys.wxDraw(gc, 200, 120);
-		lsys.wxDraw(gc, 350, 550, (float)M_PI / 2.0f);
+		//lsys.wxDraw(gc, 350, 550, (float)M_PI / 2.0f);
+		lsys.wxDraw(gc, 150, 420);
 		delete gc;
 	}
 
