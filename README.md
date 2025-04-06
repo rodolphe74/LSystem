@@ -1,6 +1,11 @@
 # L-System
 
-```C++
+
+<table border="0">
+<tr>
+<td>
+  
+  ```C++
 // Bush creation
 LSystem lsys;
 lsys.setAxiom("Y");
@@ -11,7 +16,6 @@ lsys.dumpRecursion();
 lsys.setLength(4.0f);
 lsys.setAngle((float)DEGTORAD(25.7));
 ```
-
 
 ```C++
 // Displaying using wxWidgets
@@ -28,5 +32,9 @@ void MyFrame::OnPaint(wxPaintEvent &event) {
   }
 }
 ```
+  
+</td>
+<td><img src="samples/Bush.png" width="200"  alt="bush"/></td>
+</tr>
+</table
 
-<img src="samples/Bush.png" width="200"  alt="bush"/>
