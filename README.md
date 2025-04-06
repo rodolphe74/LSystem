@@ -29,7 +29,7 @@ void MyFrame::OnPaint(wxPaintEvent &event) {
 }
 ```
 
-![](/samples/Bush.png)
+<td><img src="samples/Bush.png" width="200"  alt="bush"/></td>
 
 ## Koch
 
@@ -43,7 +43,7 @@ lsys.setLength(2.0f);
 lsys.setAngle((float)DEGTORAD(60));
 ```
 
-![](/samples/Koch.png)
+<td><img src="samples/Koch.png" width="200"  alt="koch"/></td>
 
 
 ## Saupe
@@ -61,4 +61,4 @@ lsys.setLength(10.0f);
 lsys.setAngle((float)DEGTORAD(20));
 ```
 
-![](/samples/Saupe.png)
+<td><img src="samples/Saupe.png" width="200"  alt="saupe"/></td>
