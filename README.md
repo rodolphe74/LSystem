@@ -51,7 +51,7 @@ lsys.setAngle((float)DEGTORAD(60));
 ```
 
 </td>
-<td style='background-color:transparent!important'><img src="samples/Koch.png" width="200"  alt="koch"/></td>
+<td><img src="samples/Koch.png" width="200"  alt="koch"/></td>
 </td>
 </tr>
 
