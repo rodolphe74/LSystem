@@ -9,6 +9,7 @@
 </table
 
 
+
 ```C++
 // Bush creation
 LSystem lsys;
