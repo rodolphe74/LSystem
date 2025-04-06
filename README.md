@@ -1,9 +1,6 @@
 # L-System
+## Bush
 
-<table border="0">
-<tr>
-<td>
-  
   ```C++
 // Bush creation
 LSystem lsys;
@@ -31,13 +28,10 @@ void MyFrame::OnPaint(wxPaintEvent &event) {
   }
 }
 ```
-  
-</td>
-<td><img src="samples/Bush.png" width="200"  alt="bush"/></td>
-</tr>
 
-<tr>
-<td>
+![](/samples/Bush.png)
+
+## Koch
 
 ```C++
 lsys.setAxiom("F++F++F");
@@ -49,13 +43,10 @@ lsys.setLength(2.0f);
 lsys.setAngle((float)DEGTORAD(60));
 ```
 
-</td>
-<td><img src="samples/Koch.png" width="200"  alt="koch"/></td>
-</td>
-</tr>
+![](/samples/Koch.png)
 
-<tr>
-<td>
+
+## Saupe
 
 ```C++
 lsys.setAxiom("VZFFF");
@@ -70,10 +61,4 @@ lsys.setLength(10.0f);
 lsys.setAngle((float)DEGTORAD(20));
 ```
 
-</td>
-<td><img src="samples/Saupe.png" width="200"  alt="saupe"/></td>
-</td>
-</tr>
-
-
-</table
+![](/samples/Saupe.png)
