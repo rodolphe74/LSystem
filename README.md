@@ -27,7 +27,7 @@ lsys.setLength(2.0f);
 lsys.setAngle((float)DEGTORAD(60));
 ```
 
-<td><img src="samples/Koch.png" width="200"  alt="koch"/></td>
+<td><img src="samples/Koch.gif" width="200"  alt="koch"/></td>
 
 
 ## Saupe
