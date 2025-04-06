@@ -41,13 +41,13 @@ void MyFrame::OnPaint(wxPaintEvent &event) {
 <td>
 
 ```C++
-	lsys.setAxiom("F++F++F");
-	lsys.addRule('F', "F-F++F-F");
-	lsys.addRule('Y', "YFX[+Y][-Y]");
-	lsys.recurse(5);
-	lsys.dumpRecursion();
-	lsys.setLength(2.0f);
-	lsys.setAngle((float)DEGTORAD(60));
+lsys.setAxiom("F++F++F");
+lsys.addRule('F', "F-F++F-F");
+lsys.addRule('Y', "YFX[+Y][-Y]");
+lsys.recurse(5);
+lsys.dumpRecursion();
+lsys.setLength(2.0f);
+lsys.setAngle((float)DEGTORAD(60));
 ```
 
 </td>
