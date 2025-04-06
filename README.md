@@ -1,13 +1,5 @@
 # L-System
 
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-
-
 <table border="0">
 <tr>
 <td>
@@ -85,10 +77,3 @@ lsys.setAngle((float)DEGTORAD(20));
 
 
 </table
-
-
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
