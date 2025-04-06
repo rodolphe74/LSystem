@@ -54,5 +54,28 @@ lsys.setAngle((float)DEGTORAD(60));
 <td><img src="samples/Koch.png" width="200"  alt="koch"/></td>
 </td>
 </tr>
+
+<tr>
+<td>
+
+```C++
+lsys.setAxiom("VZFFF");
+lsys.addRule('V', "[+++W][---W]YV");
+lsys.addRule('W', "+X[-W]Z");
+lsys.addRule('X', "-W[+X]Z");
+lsys.addRule('Y', "YZ");
+lsys.addRule('Z', " [-FFF][+FFF]F");
+lsys.recurse(11);
+lsys.dumpRecursion();
+lsys.setLength(10.0f);
+lsys.setAngle((float)DEGTORAD(20));
+```
+
+</td>
+<td><img src="samples/Saupe.png" width="200"  alt="saupe"/></td>
+</td>
+</tr>
+
+
 </table
 

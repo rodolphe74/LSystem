@@ -19,4 +19,9 @@
       <UniqueIdentifier>{4EEAE665-C7D5-3B4E-B1C8-081D6228D3F9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
