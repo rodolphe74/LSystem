@@ -36,5 +36,24 @@ void MyFrame::OnPaint(wxPaintEvent &event) {
 </td>
 <td><img src="samples/Bush.png" width="200"  alt="bush"/></td>
 </tr>
+
+<tr>
+<td>
+
+```C++
+	lsys.setAxiom("F++F++F");
+	lsys.addRule('F', "F-F++F-F");
+	lsys.addRule('Y', "YFX[+Y][-Y]");
+	lsys.recurse(5);
+	lsys.dumpRecursion();
+	lsys.setLength(2.0f);
+	lsys.setAngle((float)DEGTORAD(60));
+```
+
+</td>
+<td>
+<td><img src="samples/Koch.png" width="200"  alt="koch"/></td>
+</td>
+</tr>
 </table
 
