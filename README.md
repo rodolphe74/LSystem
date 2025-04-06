@@ -51,7 +51,6 @@ void MyFrame::OnPaint(wxPaintEvent &event) {
 ```
 
 </td>
-<td>
 <td><img src="samples/Koch.png" width="200"  alt="koch"/></td>
 </td>
 </tr>
