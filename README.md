@@ -79,3 +79,11 @@ lsys.setAngle((float)DEGTORAD(20));
 
 </table
 
+
+| Code           | Résultat              |
+| :------------- | :----------           |
+|      BM40      |![](/samples/Bush.png) |
+|      BM40      ||
+|      BM16      ||
+|      BM40      ||
+|      BM4       ||
