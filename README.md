@@ -48,7 +48,7 @@ lsys.setAngle((float)DEGTORAD(20));
 <td><img src="samples/Saupe.png" width="200"  alt="saupe"/></td>
 
 
-# Algae
+## Algae
 ```C++
 lsys.setAxiom("af");
 lsys.addRule('a', "FFFFFv[+++h][---q]fb");
