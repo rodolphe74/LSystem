@@ -74,8 +74,13 @@ void LSystem::wxDraw(wxGraphicsContext *gc, float x, float y, float startAngle)
 		char c = recursions[i];
 		switch (c)
 		{
-		//case 'G':
+		case 'A':
+		case 'B':
+		case 'C':
+		case 'D':
+		case 'E':
 		case 'F':
+		//case 'G':
 			t->draw(length);
 			break;
 		//case 'g':

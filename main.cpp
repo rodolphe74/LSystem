@@ -66,34 +66,43 @@ MyFrame::MyFrame(const wxString &title, const wxPoint &pos, const wxSize &size)
 	//lsys.setLength(10.0f);
 	//lsys.setAngle((float)DEGTORAD(20));
 
-	lsys.setAxiom("af");
-	lsys.addRule('a', "FFFFFv[+++h][---q]fb");
-	lsys.addRule('b', "FFFFFv[+++h][---q]fc");
-	lsys.addRule('c', "FFFFFv[+++fa]fd");
-	lsys.addRule('d', "FFFFFv[+++h][---q]fe");
-	lsys.addRule('e', "FFFFFv[+++h][---q]fg");
-	lsys.addRule('g', "FFFFFv[---fa]fa");
-	lsys.addRule('h', "ifFF");
-	lsys.addRule('i', "fFFF[--m]j");
-	lsys.addRule('j', "fFFF[--n]k");
-	lsys.addRule('k', "fFFF[--o]l");
-	lsys.addRule('l', "fFFF[--p]");
-	lsys.addRule('m', "fFn");
-	lsys.addRule('n', "fFo");
-	lsys.addRule('o', "fFp");
-	lsys.addRule('p', "fF");
-	lsys.addRule('q', "rfF");
-	lsys.addRule('r', "fFFF[++m]s");
-	lsys.addRule('s', "fFFF[++n]t");
-	lsys.addRule('t', "fFFF[++o]u");
-	lsys.addRule('u', "fFFF[++p]");
-	lsys.addRule('v', "Fv");	
-	lsys.recurse(16);
+	//lsys.setAxiom("af");
+	//lsys.addRule('a', "FFFFFv[+++h][---q]fb");
+	//lsys.addRule('b', "FFFFFv[+++h][---q]fc");
+	//lsys.addRule('c', "FFFFFv[+++fa]fd");
+	//lsys.addRule('d', "FFFFFv[+++h][---q]fe");
+	//lsys.addRule('e', "FFFFFv[+++h][---q]fg");
+	//lsys.addRule('g', "FFFFFv[---fa]fa");
+	//lsys.addRule('h', "ifFF");
+	//lsys.addRule('i', "fFFF[--m]j");
+	//lsys.addRule('j', "fFFF[--n]k");
+	//lsys.addRule('k', "fFFF[--o]l");
+	//lsys.addRule('l', "fFFF[--p]");
+	//lsys.addRule('m', "fFn");
+	//lsys.addRule('n', "fFo");
+	//lsys.addRule('o', "fFp");
+	//lsys.addRule('p', "fF");
+	//lsys.addRule('q', "rfF");
+	//lsys.addRule('r', "fFFF[++m]s");
+	//lsys.addRule('s', "fFFF[++n]t");
+	//lsys.addRule('t', "fFFF[++o]u");
+	//lsys.addRule('u', "fFFF[++p]");
+	//lsys.addRule('v', "Fv");	
+	//lsys.recurse(16);
+	//lsys.dumpRecursion();
+	//lsys.setLength(2.5f);
+	//lsys.setAngle((float)DEGTORAD(12));
+
+	lsys.setAxiom("[N]++[N]++[N]++[N]++[N] ");
+	lsys.addRule('M', "OA++PA----NA[-OA----MA]++");
+	lsys.addRule('N', "+OA--PA[---MA--NA]+");
+	lsys.addRule('O', "-MA++NA[+++OA++PA]-");
+	lsys.addRule('P', "--OA++++MA[+PA++++NA]--NA");
+	lsys.addRule('A', "");
+	lsys.recurse(6);
 	lsys.dumpRecursion();
-	lsys.setLength(2.5f);
-	lsys.setAngle((float)DEGTORAD(12));
-
-
+	lsys.setLength(14);
+	lsys.setAngle((float)DEGTORAD(36));
 }
 
 MyFrame::~MyFrame() {
@@ -107,7 +116,7 @@ void MyFrame::OnPaint(wxPaintEvent &event) {
 	{
 		gc->SetAntialiasMode(wxANTIALIAS_DEFAULT);
 		gc->SetPen(wxPen(wxColor(0, 0, 0), 1));
-		lsys.wxDraw(gc, 400, 550, (float)M_PI / 2.0f);
+		lsys.wxDraw(gc, 400, 280, (float)M_PI / 2.0f);
 		delete gc;
 	}
 

@@ -1,4 +1,23 @@
 # L-System
+
+## Penrose
+
+  ```C++
+lsys.setAxiom("[N]++[N]++[N]++[N]++[N] ");
+lsys.addRule('M', "OA++PA----NA[-OA----MA]++");
+lsys.addRule('N', "+OA--PA[---MA--NA]+");
+lsys.addRule('O', "-MA++NA[+++OA++PA]-");
+lsys.addRule('P', "--OA++++MA[+PA++++NA]--NA");
+lsys.addRule('A', "");
+lsys.recurse(6);
+lsys.dumpRecursion();
+lsys.setLength(14);
+lsys.setAngle((float)DEGTORAD(36));
+```
+
+<td><img src="samples/Penrose.png" width="200"  alt="bush"/></td>
+
+
 ## Bush
 
   ```C++
